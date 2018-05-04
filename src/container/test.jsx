@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class test extends Component {
     render() {
@@ -6,6 +7,7 @@ class test extends Component {
             <div>
                 this is a test
                 this is another test
+                <RaisedButton>test</RaisedButton>
             </div>
         );
     }
