@@ -12,6 +12,10 @@ const Navigation = () => {
             titleStyle={{
                 height:"70px",
             }}
+            style={{
+                position:"fixed",
+                backgroundColor:"white"
+            }}
         />
     );
 };

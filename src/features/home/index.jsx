@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 import * as Layout from './layout'
-import Info from './components/Info'
-import LoginForm from './components/LoginForm'
-class Welcome extends Component {
+class Home extends Component {
     render() {
         return (
-            <Layout.GridContainer>
-                <Layout.GridInfo>
-                    <Info />
-                </Layout.GridInfo>
-                <Layout.GridForm>
-                    <LoginForm />
-                </Layout.GridForm>
-            </Layout.GridContainer>
+            <Layout.HomeGrid>
+                this is home page
+            </Layout.HomeGrid>
         );
     }
 }
 
-export default Welcome;
+export default Home;

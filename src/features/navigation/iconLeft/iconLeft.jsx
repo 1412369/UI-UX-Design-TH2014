@@ -7,7 +7,6 @@ class Logo extends Component {
         return (
             <HardwareComputer
                 style={{
-                    color:"white",
                     height:"50px",
                     width:"50px",
                     marginLeft:"100px"

@@ -3,17 +3,22 @@ import styled from 'styled-components'
 import { RaisedButton } from 'material-ui'
 import { ActionHome } from 'material-ui/svg-icons'
 const InforStyle = styled.div`
-    color:white;
     font-family:Roboto;
     margin-top:100px;
     span {
         font-size:30px;
+        color:grey;
         font-weight:bold;
         line-height:50px;
+        background-color:white;
+        border-radius:10px;
+        padding:5px;
     }
     p {
-        font-style: italic;
-        font-size:20px;        
+        font-size:20px;    
+        background-color:white;
+        border-radius:10px;
+        padding:5px;
     }
 
 `
@@ -22,7 +27,7 @@ class Info extends Component {
         return (
             <React.Fragment>
                 <InforStyle>
-                    <span> Khoa Công nghệ Thông tin (CNTT) </span>
+                    <span> Khoa Công nghệ Thông tin</span>
                     <p>
                         Trường Đại học Khoa học Tự nhiên Tp.HCM được thành lập
                         theo quyết định số 3818/GD-ĐT ngày 13/12/1994 của Bộ Trưởng Bộ GD&ĐT,
@@ -33,22 +38,23 @@ class Info extends Component {
                  </p>
                 </InforStyle>
                 <RaisedButton
+                    primary
                     buttonStyle={{
-                        backgroundColor: "#EB7B2D",
                         color: "white",
                         width: "150px"
                     }}
                     labelPosition="before"
                     icon={<ActionHome color="white" />}>Web Trường</RaisedButton>
+
                 <RaisedButton
-                    style={{marginLeft:"20px"}}
+                    primary
+                    style={{ marginLeft: "20px" }}
                     buttonStyle={{
-                        backgroundColor: "#EB7B2D",
                         color: "white",
                         width: "150px"
                     }}
                     labelPosition="before"
-                    icon={<ActionHome color="white" />}>Web Trường</RaisedButton>
+                    icon={<ActionHome color="white" />}>Web Khoa</RaisedButton>
             </React.Fragment>
 
         );

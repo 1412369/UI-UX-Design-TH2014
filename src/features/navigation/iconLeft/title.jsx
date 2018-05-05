@@ -3,6 +3,7 @@ import Styled from 'styled-components'
 const TitleStyled = Styled.div`
     margin:0;
     padding:0;
+    color:black;
     line-height:20px;
     margin-top:10px;
     text-align:center;
