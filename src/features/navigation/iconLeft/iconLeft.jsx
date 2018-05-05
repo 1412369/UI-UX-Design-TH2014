@@ -9,7 +9,8 @@ class Logo extends Component {
                 style={{
                     height:"50px",
                     width:"50px",
-                    marginLeft:"100px"
+                    marginLeft:"100px",
+                    color:"#1F4788"
                 }}
             />
         );

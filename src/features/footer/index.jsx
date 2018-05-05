@@ -6,7 +6,7 @@ const FooterStyled = styled.div`
     width: 100%;
     height: auto;
     text-align:center;
-.f2{
+.f2 {
   width: 100%;
 }
 
@@ -18,16 +18,20 @@ const FooterStyled = styled.div`
 	color: white;
 	text-align: left;
 	margin-right: 1em;
-	margin-left: 1em;
+    margin-left: 1em;
+    
 }
 
 .sublink a{
 	text-decoration: none;
 	color: white;
 }
-
+.item {
+    color:grey
+}
 .heading{
   color: #1F4788;
+  text-align:center;
 }
 
 .f3{
@@ -45,6 +49,8 @@ const FooterStyled = styled.div`
 }
 .left span{
   line-height: 4em;
+  color: #1F4788;
+  
 }
 .right{
   float: right;
@@ -52,7 +58,7 @@ const FooterStyled = styled.div`
 }
 .right ul li{
   display: inline;
-  color: #59ABE3;
+  color: #1F4788;
   line-height: 2em;
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -77,25 +83,24 @@ class Footer extends Component {
             <FooterStyled>
                 <div className="f2">
                     <ul className="sublink">
-                        <li className="heading">Work</li>
-                        <li href="#">What we do</li>
-                        <li href="#">What we can</li>
+                        <li className="heading">Liên hệ</li>
+                        <li className="item" href="#">hcmus@gmail.edu.vn</li>
+                        <li className="item" href="#">sđt: 0123456789</li>
                     </ul>
                     <ul className="sublink">
                         <li className="heading">Resources</li>
-                        <li href="#">Support</li>
-                        <li href="#">FAQ</li>
+                        <li className="item" href="#">hcmus@gmail.edu.vn</li>
+                        <li className="item" href="#">sđt: 0123456789</li>
                     </ul>
                     <ul className="sublink">
                         <li className="heading">About</li>
-                        <li href="#">About us</li>
-                        <li href="#">Projects</li>
+                        <li className="item" href="#">hcmus@gmail.edu.vn</li>
+                        <li className="item" href="#">sđt: 0123456789</li>
                     </ul>
                     <ul className="sublink">
                         <li className="heading">Connect</li>
-                        <li href="#">Twitter</li>
-                        <li href="#">Facebook</li>
-                        <li href="#">Instagram</li>
+                        <li className="item" href="#">hcmus@gmail.edu.vn</li>
+                        <li className="item" href="#">sđt: 0123456789</li>
                     </ul>
 
                 </div>
