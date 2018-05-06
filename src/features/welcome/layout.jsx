@@ -16,3 +16,11 @@ export const GridForm = styled.div`
     grid-column:2;
     text-align:center;
 `
+export const GridFooter = styled.div`
+    height:100px;
+    grid-row:3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:#ecf0f1;
+`

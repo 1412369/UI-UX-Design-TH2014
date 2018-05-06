@@ -1,18 +1,10 @@
 {
-    "plugins": [
-        "react"
-    ],
+    "extends": "airbnb",
     "parser": "babel-eslint",
-    "rules": {
-        "strict": 0,
-        "no-undef":0,
-        "no-dupe-keys":"off",
-        "react/prop-types": [2, { "ignore": [
-            "children","history","location","match"
-            ]}]
+    "env": {
+        "browser": true,
+        "es6": true,
+        "mocha": true
     },
-    "extends": [  
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ]
+    "rules": {}
 }

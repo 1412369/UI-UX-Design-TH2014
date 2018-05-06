@@ -5,8 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import NavBar from './features/navigation';
 import Welcome from './features/welcome';
 import Home from './features/home'
-import Footer from './features/footer'
-import { fitTheme, GridContainer, GridHeader, GridFooter, GridContent } from './layout'
+import { fitTheme, GridContainer, GridHeader, GridContent } from './layout'
 class routes extends Component {
     render() {
         return (
@@ -25,9 +24,6 @@ class routes extends Component {
                         </Switch>
                     </GridContent>
                 </GridContainer>
-                <GridFooter>
-                    <Footer />
-                </GridFooter>
             </MuiThemeProvider>
         );
     }
