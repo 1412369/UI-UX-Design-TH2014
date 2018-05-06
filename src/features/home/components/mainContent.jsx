@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-import { HomeContent, EventGrid, CourseGrid, ContentLayout } from '../layout'
+import * as Layout from '../layout'
 import { Paper } from 'material-ui'
 import EventList from './eventList'
 import CourseList from './courseList'
+import EnrollList from './enrollList'
 class MainContent extends Component {
     render() {
         return (
-            <HomeContent>
+            <Layout.HomeContent>
                 <Paper>
-                    <ContentLayout>
-                        <EventGrid>
+                    <Layout.ContentLayout>
+                        <Layout.EventGrid>
                             <h4>Sự kiện sắp diễn ra</h4>
-                            <EventList/>
-                        </EventGrid>
-                        <CourseGrid>
-                        <h4>Khoá học gần nhất của tôi</h4>
-                        <CourseList />
-                        </CourseGrid>
-                    </ContentLayout>
+                            <EventList />
+                        </Layout.EventGrid>
+                        <Layout.CourseGrid>
+                            <h4>Khoá học gần nhất của tôi</h4>
+                            <CourseList />
+                        </Layout.CourseGrid>
+                        <Layout.EnrollGrid>
+                            <h4>Ghi danh môn học</h4>
+                            <EnrollList />
+                        </Layout.EnrollGrid>
+                    </Layout.ContentLayout>
                 </Paper>
-            </HomeContent>
+            </Layout.HomeContent>
         );
     }
 }
