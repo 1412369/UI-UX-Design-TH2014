@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import * as Layout from './layout'
+import MainContent from './components'
 class Home extends Component {
     render() {
         return (
             <Layout.HomeGrid>
-                this is home page
+                <MainContent />
             </Layout.HomeGrid>
         );
     }

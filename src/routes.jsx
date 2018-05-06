@@ -19,8 +19,8 @@ class routes extends Component {
                     </GridHeader>
                     <GridContent>
                         <Switch>
+                            <Route path="/home" component={Home} />
                             <Route exact path="/" component={Welcome} />
-                            <Route exact path="/home" component={Home} />
                             <Route path="*" render={() => <div>Not found</div>} />
                         </Switch>
                     </GridContent>
