@@ -11,7 +11,6 @@ import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import { blue500, yellow600 } from 'material-ui/styles/colors';
 import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
 import PropTypes from 'prop-types'
-
 const flexContainer = {
     display:"flex",
     float:"left",

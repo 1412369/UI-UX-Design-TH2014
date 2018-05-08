@@ -9,7 +9,6 @@ export const HomeGrid = styled.div`
 export const FixedBar = styled.div`
     margin-top:20px;
     grid-column:1;
-    position:fixed;
 `
 export const HomeContent = styled.div`
     grid-column:2;

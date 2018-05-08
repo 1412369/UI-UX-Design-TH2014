@@ -3,7 +3,9 @@ import { TextField } from 'material-ui'
 import styled from 'styled-components'
 import { withRouter } from 'react-router-dom'
 import { Paper, RaisedButton, Checkbox } from 'material-ui';
-import { compose } from 'recompose'
+import { compose } from 'recompose';
+import { connect } from 'react-redux';
+import Types from '../../../login/constant.js'
 const FormStyled = styled.div`
 padding:20px;
 text-align:center;
@@ -18,9 +20,11 @@ const style = {
 };
 class LoginForm extends Component {
     onLoginSuccess = () => {
+        this.props.dispatch({ type: Types.LOGIN_SUCCESS })
         this.props.history.push('/home')
     }
     render() {
+        console.log("this.rops", this.props)
         return (
             <Paper style={style}>
                 <h4>
@@ -66,7 +70,12 @@ class LoginForm extends Component {
         );
     }
 }
-
+const mapDispatch = (dispatch) => {
+    return {
+        dispatch
+    }
+}
 export default compose(
     withRouter,
+    connect(null, mapDispatch),
 )(LoginForm)

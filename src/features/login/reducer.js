@@ -7,10 +7,10 @@ const initialState = {
     logged: false
 }
 export default (state = initialState, actions) => {
-    switch (actions.types) {
+    switch (actions.type) {
         case Types.LOGIN_SUCCESS:
             return {
-                ...actions,
+                ...state,
                 logged: true
             }
         case Types.LOGIN_FAIL:

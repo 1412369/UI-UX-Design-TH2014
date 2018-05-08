@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -33,8 +34,11 @@ module.exports = {
         loaders: ['babel-loader'],
       },
       {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader"
+        ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -42,6 +46,10 @@ module.exports = {
         options: {
           limit: 10000,
         },
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'file-loader',
       },
     ],
   },
@@ -57,6 +65,10 @@ module.exports = {
     ? [
       HTMLWebpackPluginConfig,
       new webpack.HotModuleReplacementPlugin(),
+      new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+      })
     ]
     : [HTMLWebpackPluginConfig, DefinePluginConfig],
 };
