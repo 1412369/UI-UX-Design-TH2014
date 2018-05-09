@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomeGrid = styled.div`
     display:grid;
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 20% 55% 25%;
     min-height:650px;
     background-color:#e9ebee;
 `
@@ -15,6 +15,13 @@ export const HomeContent = styled.div`
     grid-row:1;    
     margin-top:20px;
 `
+export const CalendarLayout = styled.div`
+    margin:20px 0 0 10px;
+    grid-column:3;
+    .calendar-event {
+
+    }
+`
 export const ContentLayout = styled.div`
     display:grid;
     grid-row:2;    
@@ -22,7 +29,7 @@ export const ContentLayout = styled.div`
         color:grey;
         font-family:Roboto;
     }
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 350px 350px;
     grid-auto-rows:auto auto;
 `
 export const EventGrid = styled.div`

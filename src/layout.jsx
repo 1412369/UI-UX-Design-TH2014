@@ -13,8 +13,6 @@ export const GridHeader = styled.div`
 export const GridContent = styled.div`
     grid-row:2;
 `
-
-
 export const fitTheme = getMuiTheme({
     palette: {
         primary1Color: '#e74c3c',

@@ -5550,6 +5550,12 @@ react-breadcrumbs@^2.1.4:
     redux "^3.6.0"
     uuid "^3.0.1"
 
+react-cardstack@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-cardstack/-/react-cardstack-1.1.0.tgz#ba408846a27085cda6d86c4f675c84198eb088fc"
+  dependencies:
+    prop-types "^15.5.7"
+
 react-dom@^16.3.2:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.2.tgz#cb90f107e09536d683d84ed5d4888e9640e0e4df"

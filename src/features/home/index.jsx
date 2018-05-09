@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as Layout from './layout'
 import MainContent from './components/mainContent'
 import StickyBar from './components/stickyBar'
+import Calendar from './components/calendar'
 import { Link, Route } from 'react-router-dom'
 import DetailCourse from '../detailCourse'
 import { Paper } from 'material-ui'
@@ -20,11 +21,12 @@ class Home extends Component {
                 <StickyBar />
                 <Layout.HomeContent>
                     <Paper>
-                        <Breadcrumb style={{ padding: "20px 0 0 20px" }}>break cum break cum break cum break cum break cum</Breadcrumb>
-                            <Route exact path={`${this.props.match.path}`} component={DetailCourse} />
+                        <Breadcrumb style={{ padding: "20px 0 0 20px" }}>{this.props.location.pathname}</Breadcrumb>
+                            <Route exact path={`${this.props.match.path}`} component={MainContent} />
                             <Route path={`${this.props.match.path}/:id`} component={DetailCourse} />
                     </Paper>
                 </Layout.HomeContent>
+                <Calendar />
             </Layout.HomeGrid>
         );
     }

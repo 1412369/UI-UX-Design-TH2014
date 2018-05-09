@@ -11,7 +11,6 @@ import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import { blue500, yellow600 } from 'material-ui/styles/colors';
 import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
 import PropTypes from 'prop-types'
-import InfiniteCalendar from 'react-infinite-calendar';
 
 let SelectableList = makeSelectable(List)
 
@@ -89,11 +88,7 @@ class StickyBar extends Component {
                         secondaryText="Jan 10, 2014"
                     />
                 </List>
-                <InfiniteCalendar 
-                    width={300}
-                    height={400}
-                    disabledDays={[0,6]}
-                />
+
             </FixedBar>
         );
     }

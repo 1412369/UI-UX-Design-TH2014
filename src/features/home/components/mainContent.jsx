@@ -8,6 +8,7 @@ class MainContent extends Component {
     render() {
         return (
             <React.Fragment>
+     
                 <Layout.ContentLayout>
                     <Layout.EventGrid>
                         <h4>Sự kiện sắp diễn ra</h4>
