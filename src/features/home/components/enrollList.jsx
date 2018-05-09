@@ -23,19 +23,19 @@ class EnrollList extends Component {
             <List defaultValue={1} style={flexContainer}>
                 <ListItem
                     value={1}
-                    style={{ color: "#1F4788",width:"300px"}}
+                    style={{ color: "#1F4788",width:"250px"}}
                     leftAvatar={<Avatar backgroundColor="#ff7675" icon={<ActionChromeReaderMode />} />}
                     primaryText="Chính quy - CQ/2014"
                 />
                 <ListItem
                     value={2}
-                    style={{ color: "#1F4788",width:"300px" }}
+                    style={{ color: "#1F4788",width:"250px" }}
                     leftAvatar={<Avatar backgroundColor="#ff7675" icon={<ActionChromeReaderMode />} />}
                     primaryText="Cao đẳng- CĐ/2014"
                 />
                 <ListItem
                     value={2}
-                    style={{ color: "#1F4788",width:"300px" }}
+                    style={{ color: "#1F4788",width:"250px" }}
                     leftAvatar={<Avatar backgroundColor="#ff7675" icon={<ActionChromeReaderMode />} />}
                     primaryText="Cao đẳng- CĐ/2014"
                 />

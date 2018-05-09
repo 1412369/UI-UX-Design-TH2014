@@ -8,6 +8,7 @@ export const HomeGrid = styled.div`
 `
 export const FixedBar = styled.div`
     margin-top:20px;
+    position:fixed;
     grid-column:1;
 `
 export const HomeContent = styled.div`

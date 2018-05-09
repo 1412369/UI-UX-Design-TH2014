@@ -11,14 +11,14 @@ class Calendar extends Component {
         return (
             <CalendarLayout>
                 <InfiniteCalendar
-                    width={300}
+                    width={330}
                     height={200}
                     disabledDays={[0, 6]}
                 />
                 <br />
                 <CardStack
                     height={150}
-                    width={300}
+                    width={330}
                     background='#f8f8f8'
                     hoverOffset={25}>
                     <Card background='#448aff'>
