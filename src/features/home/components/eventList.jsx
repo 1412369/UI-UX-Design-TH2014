@@ -29,7 +29,6 @@ class EventList extends Component {
                     leftAvatar={<Avatar src="/public/images/math.jpg" />}
                     primaryText="TKGD-TH2014-Nop PA 04"
                     secondaryText={<span style={{color:"#e17055"}}>Jan 28, 2014</span>}
-                   
                     secondaryTextLines={1}
                 />
             </List>
