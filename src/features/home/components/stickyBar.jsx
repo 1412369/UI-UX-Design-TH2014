@@ -11,7 +11,7 @@ import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import { blue500, yellow600 } from 'material-ui/styles/colors';
 import EditorInsertChart from 'material-ui/svg-icons/editor/insert-chart';
 import PropTypes from 'prop-types'
-
+import {Link} from 'react-router-dom'
 let SelectableList = makeSelectable(List)
 
 function wrapState(ComposedComponent) {
@@ -53,25 +53,32 @@ class StickyBar extends Component {
         return (
             <FixedBar>
                 <SelectableList defaultValue={1}>
+                    <Link to="/home" style={{textDecoration:"none"}}>
                     <ListItem
                         value={1}
                         leftAvatar={<Avatar icon={<FileFolder />} />}
-                        primaryText="Khoá học của tôi"
+                        primaryText="Trang chủ"
                         secondaryText="Jan 9, 2014"
 
                     />
+                    </Link>
+                    <Link to="/home/courses" style={{textDecoration:"none"}}>
+                    
                     <ListItem
                         value={2}
                         leftAvatar={<Avatar icon={<FileFolder />} />}
                         primaryText="Các khoá học đã đăng ký"
                         secondaryText="Jan 17, 2014"
                     />
+                    </Link>
+                    <Link to="/" style={{textDecoration:"none"}}>
                     <ListItem
                         value={3}
                         leftAvatar={<Avatar icon={<FileFolder />} />}
                         primaryText="Danh sách môn học"
                         secondaryText="Jan 28, 2014"
                     />
+                    </Link>
                 </SelectableList>
                 <Divider inset={true} />
                 <List>

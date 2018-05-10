@@ -18,7 +18,7 @@ class CourseList extends Component {
     render() {
         return (
             <List defaultValue={1}>
-                <Link to="/home/1" style={{textDecoration:"none"}}>
+                <Link to="/home/courses/1" style={{textDecoration:"none"}}>
                     <ListItem
                         value={1}
                         style={{ color: "#1F4788" }}
@@ -27,7 +27,7 @@ class CourseList extends Component {
                         secondaryText={<span style={{ color: "#1F4788" }}>Jan 28, 2014</span>}
                     />
                 </Link>
-                <Link to="/home/2" style={{textDecoration:"none"}}>
+                <Link to="/home/courses/2" style={{textDecoration:"none"}}>
 
                     <ListItem
                         value={2}
@@ -37,7 +37,7 @@ class CourseList extends Component {
                         secondaryText={<span style={{ color: "#1F4788" }}>Jan 28, 2014</span>}
                     />
                 </Link>
-                <Link to="/home/3" style={{textDecoration:"none"}}>
+                <Link to="/home/courses/3" style={{textDecoration:"none"}}>
                     <ListItem
                         value={3}
                         style={{ color: "#1F4788" }}

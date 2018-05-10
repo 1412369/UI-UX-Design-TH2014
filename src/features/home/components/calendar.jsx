@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
-import InfiniteCalendar from 'react-infinite-calendar';
+import InfiniteCalendar,{  
+    Calendar,
+    defaultMultipleDateInterpolation,
+    withMultipleDates,} from 'react-infinite-calendar';
 import { CalendarLayout } from '../layout'
 import { CardStack, Card } from 'react-cardstack';
 import DeadlineItem from './calendarItem'
 
+const MultipleDatesCalendar = withMultipleDates(Calendar);
+  
 
-
-class Calendar extends Component {
+class AppCalendar extends Component {
     render() {
+        const current_time = new Date().getTime()
         return (
             <CalendarLayout>
                 <InfiniteCalendar
+                    Component={MultipleDatesCalendar}
                     width={330}
                     height={200}
-                    disabledDays={[0, 6]}
+                    interpolateSelection={defaultMultipleDateInterpolation}
+                    selected={[
+                        new Date(current_time+1000*60*60*24),
+                        new Date(current_time+1000*60*60*48),
+                        new Date(current_time+1000*60*60*72),
+                        new Date(current_time+1000*60*60*72),
+                    ]}
+                    
                 />
                 <br />
                 <CardStack
@@ -37,4 +50,4 @@ class Calendar extends Component {
     }
 }
 
-export default Calendar;
+export default AppCalendar;
