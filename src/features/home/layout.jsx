@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomeGrid = styled.div`
     display:grid;
-    grid-template-columns: 20% 55% 25%;
+    grid-template-columns: 20% 55% 24%;
     min-height:650px;
     background-color:#e9ebee;
 `

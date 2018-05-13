@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as Layout from './layout'
 import MainContent from './components/mainContent'
 import StickyBar from './components/stickyBar'
-import Calendar from './components/calendar'
+import NewCalendar from './components/newCalendar'
 import { Link, Route } from 'react-router-dom'
 import DetailCourse from '../detailCourse'
 import { Paper } from 'material-ui'
@@ -28,7 +28,7 @@ class Home extends Component {
                             <Route exact path={`${this.props.match.path}/courses`} component={AllCourses} />
                     </Paper>
                 </Layout.HomeContent>
-                <Calendar />
+                <NewCalendar />
             </Layout.HomeGrid>
         );
     }
